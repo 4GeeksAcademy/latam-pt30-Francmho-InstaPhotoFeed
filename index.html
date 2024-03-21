@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/e54b051731.js" crossorigin="anonymous"></script>
+  <title>Insta Photo Feed with Bootstrip FM</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!--NAVBAR-->
+    <nav class="navbar bg-body-tertiary justify-space-around px-1">
+      <span>
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
+      </span>
+      <div class="navbar-right d-flex">
+        <button class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#modal">Create a new post</button>
+        <!--Dropdown-->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+    </nav>
+    <!--END Dropdown-->
+
+
+
+    <!--TABS & FORMS ?font-size-small-->
+    <div>
+      <ul class="nav justify-content-center  nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane"
+            type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true">
+            <i class="fa-size-small fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square-tab-pane" type="button"
+            role="tab" aria-controls="square-tab-pane" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <!--Grid-->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab"
+          tabindex="0">
+
+          <div class="row g-2 mt-1">
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_3amateur_boxing_young_fight_f91ebeaf-dd93-49d0-ac7b-9c8e2ce5c6fc.PNG"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_amateur_boxers_training_hard_in_gym_d3e6b438-ab16-4218-b49e-aba45a880682.PNG"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_Bad_bunny_singing_opera_with_Gucci_Suit_9d4b5a50-09be-4652-8d3d-5d378d6a3df0.PNG"><img>
+            </div>
+          </div>
+
+
+          <div class="row g-2 mt-1">
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_logo_of_a_spartan_warrior_meditating_-_dramatic_7b2cad86-5927-442f-879d-a19ea82c2aee.PNG"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_man_inside_virtual_reality_seeing_the_coding_carac_dd80fe7e-c5ff-4819-a127-20c77e47b54c.webp"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_represent_Lucia_di_Lammenmore_in_a_majestic_bauhau_c73a22ff-f8af-4ce8-a1ec-82cd7f26e10f.PNG"><img>
+            </div>
+          </div>
+
+
+          <div class="row g-2 mt-1">
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_the_power_and_importance_of_being_a_influencer_whe_536a68e4-183c-4db6-8836-171e21ef67d1.PNG"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid"
+                src="./thesocialdys_the_power_and_importance_of_being_a_influencer_whe_f74c2fd7-8897-4191-9b18-9193418a6faf.PNG"><img>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="./MC2.jpeg"><img>
+            </div>
+          </div>
+
+          <!--END Grid-->
+          <!--Square-->
+        </div>
+        <div class="tab-pane fade" id="square-tab-pane" role="tabpanel" aria-labelledby="square-tab" tabindex="0">
+
+          <div class="card my-2">
+
+            <h2>Why boxing?</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_3amateur_boxing_young_fight_f91ebeaf-dd93-49d0-ac7b-9c8e2ce5c6fc.PNG"></img>
+            <strong>10k Likes</strong>
+            <p>Boxing helps kids gain self-confidence, improves self-perception and Discipline.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>Your Box Gym</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_amateur_boxers_training_hard_in_gym_d3e6b438-ab16-4218-b49e-aba45a880682.PNG"></img>
+            <strong>5k Likes</strong>
+            <p>Boxing gyms worldwide receive people from all ages, ready to teach them.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>Where is the Bad Bunny?</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_Bad_bunny_singing_opera_with_Gucci_Suit_9d4b5a50-09be-4652-8d3d-5d378d6a3df0.PNG"></img>
+            <strong>150k Likes</strong>
+            <p>Bad Bunny has shown himself in various fashion shows 2024. But what about new music? -Fans ask.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>What does Meditation does to your mind and body??</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_logo_of_a_spartan_warrior_meditating_-_dramatic_7b2cad86-5927-442f-879d-a19ea82c2aee.PNG"></img>
+            <strong>50k Likes</strong>
+            <p>Studies shown that meditate everyday before going to bed gives you a better sleep, also
+              tranquile and prepare your nigh for the next day.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>Best Careers of the Future</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_man_inside_virtual_reality_seeing_the_coding_carac_dd80fe7e-c5ff-4819-a127-20c77e47b54c.webp"></img>
+            <strong>50k Likes</strong>
+            <p>Nowadays scientific predictions mention Programming as the future, due to the expansion in
+              technologies. Simply AI is requiring a ton of Developers.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>AI Architecs?</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_represent_Lucia_di_Lammenmore_in_a_majestic_bauhau_c73a22ff-f8af-4ce8-a1ec-82cd7f26e10f.PNG"></img>
+            <strong>85k Likes</strong>
+            <p>Can you imagine how AI help architects to ideate their future projects?. What do you thiknk
+              about it?.</p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>How can I grow my personal brand with AI and Social Media?</h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_the_power_and_importance_of_being_a_influencer_whe_536a68e4-183c-4db6-8836-171e21ef67d1.PNG"></img>
+            <strong>150k Likes</strong>
+            <p>New current technologies can help bussines owners, personal brands, and influencers grow
+              their networks. But how far can people take technology and connectivity in their business?
+            </p>
+          </div>
+
+          <div class="card my-2">
+
+            <h2>Influence the new asset in the Professional field </h2>
+            <img class="img-fluid my-1"
+              src="./thesocialdys_the_power_and_importance_of_being_a_influencer_whe_f74c2fd7-8897-4191-9b18-9193418a6faf.PNG"></img>
+            <strong>150k Likes</strong>
+            <p>This is called the Era of The Influence, people and business are measured by the size of
+              their social media accounts. What do you think about it?</p>
+          </div>
+
+
+          <!--END Square-->
+
+          <!--END Tabs & Forms-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Modal-->
+
+  <div class="modal" id="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label>Caption:</label>
+          <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Add caption of your post here"></textarea>
+          <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+          <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END modal-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
